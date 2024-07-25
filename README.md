@@ -18,7 +18,6 @@ This project investigates the impact of mobile phone usage on students' health a
 How does mobile phone usage influence students' academic performance and health, and what are the key predictors of these outcomes?
  
 ### Relevant Domain Information:
-(links to two or more articles that relate to your research question; one will most likely come from the link to the data)
 - [Does mobile phone usage really impact students’ academic performance?](https://elismurcia.com/blog/mobile-phone-usage-impact-students-academic-performance/)
 - [The Relationship between Cellphone Usage on the Physical and Mental Wellbeing of University Students: A Cross-Sectional Study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9368281/pdf/ijerph-19-09352.pdf)
 
