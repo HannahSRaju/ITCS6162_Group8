@@ -12,23 +12,17 @@
 
 
 ### Project Introduction:
-- A paragraph or two explaining the data, source, date, etc. State your goals - is your project descriptive, diagnostic, predictive or prescriptive?  Are you going to use unsupervised (no target) or supervised (target) learning?  Do you plan to use classification, clustering, linear or logistic regression, association rules? 
-
 This project investigates the impact of mobile phone usage on students' health and academic performance. The dataset comprises various attributes related to students' demographics, mobile phone usage patterns, health symptoms, and academic outcomes. By analyzing these data points, we aim to understand how mobile phone usage affects students' academic success and well-being. The goal of this project is both descriptive and predictive: to describe current trends and predict potential outcomes based on mobile phone usage. We plan to use supervised learning techniques, specifically classification and regression analysis, to identify significant predictors of academic performance and health outcomes. This involves exploring relationships between mobile phone usage patterns (e.g., time spent, activities, and educational app usage) and variables such as performance impact, distraction, attention span, and health symptoms.
 
 ### Research Question:
-- (state your research question - this will depend on the type of research you are planning)
-
 How does mobile phone usage influence students' academic performance and health, and what are the key predictors of these outcomes?
  
 ### Relevant Domain Information:
 (links to two or more articles that relate to your research question; one will most likely come from the link to the data)
-- [Article 1 Title](link to article 1)
-- [Article 2 Title](link to article 2)
+- [Does mobile phone usage really impact students’ academic performance?](https://elismurcia.com/blog/mobile-phone-usage-impact-students-academic-performance/)
+- [The Relationship between Cellphone Usage on the Physical and Mental Wellbeing of University Students: A Cross-Sectional Study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9368281/pdf/ijerph-19-09352.pdf)
 
 ### Data Source and Description:
-- (link to information or text on data and attributes, if you merge the data with other sources include this information, data is chosen from data choices listed on the Project Assignment page)
-
 The [dataset](https://www.kaggle.com/datasets/innocentmfa/students-health-and-academic-performance?resource=download) is sourced from a survey conducted on students' mobile phone usage, health, and academic performance.
 The attributes include:
 
