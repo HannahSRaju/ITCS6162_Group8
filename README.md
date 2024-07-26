@@ -47,7 +47,43 @@ The attributes include:
 - Health rating: How would students rate their overall physical and mental health? (Excellent/Good/Fair/Poor)
 
 ### Data Understanding and EDA:
-(describe what you learned, include screen shots of relevant visualizations)
+We created several different visualizations to gain an understanding on the dataset we are working with.
+
+This first visualization looks at the age distribution of the students in the dataset. We see that the majority of the students fall into the range of 21-25 with just under 70 of the 100 students falling into that category.
+
+![download](https://github.com/user-attachments/assets/bac8541f-a3b4-4eb7-acef-f6461881bd04)<br/>
+
+Next, we wanted to see how the gender distribution looked and found that most of the students were males.
+
+![download](https://github.com/user-attachments/assets/0a0d924b-f5eb-46ac-846b-77173fc162f7)<br/>
+
+One of the attributes in the data is 'Usage symptoms' which has the following symptom categories: 'Headache', 'All of these', 'Sleep disturbance', 'Anxiety or Stress', 'Sleep disturbance;Anxiety or Stress', and 'Headache;Sleep disturbance;Anxiety or Stress;All of these'. We see that most students spend about 4-6 hours on their phones daily and experience all of the symptoms. Sleep disturbance and headache were common and high-frequency symptoms across the higher daily usage ranges.  
+
+![download](https://github.com/user-attachments/assets/12e9652b-c766-478e-82c5-56e794470d3b)<br/>
+
+Another area we explored was the type of mobile activities that each age category ranged in. Keeping in mind that the majority of the students fall into the 21-25 age category, we see that this age group engages in all the following activities 'Messaging', 'Social Media', and 'Web-browsing'. 
+
+![download](https://github.com/user-attachments/assets/6008c08d-2393-41fc-9fd7-6e505261b5c0)<br/>
+
+The graph provides a clear picture of the mobile operating system landscape among your respondents, highlighting the relative prevalence of each platform. The students in this dataset mainly have Androids.
+
+![download](https://github.com/user-attachments/assets/2f1969ab-5e49-4b8c-945a-0e4e9a390b97)<br/>
+
+This analysis helps in understanding user perceptions and can be used to address potential issues related to mobile phone usage and performance in educational or work settings. The majority of students believe that mobile phone use has an impact on performance or feel neutral. 
+
+![download](https://github.com/user-attachments/assets/4a89453a-dc89-43fb-8fde-95d533a2a14d)<br/>
+
+The pie chart displays the proportion of different symptom frequencies reported by respondents.
+
+![download](https://github.com/user-attachments/assets/39e317e0-726c-4d3a-9a54-570515962f86)<br/>
+
+Here we compare the types of distractions experienced by males and females, providing a clear picture of how mobile phone usage impacts attention.
+
+![download](https://github.com/user-attachments/assets/bd28d87d-8347-47a8-96de-7e224bf6b2a0)<br/>
+
+We can see if students are aware of potential health risks associated with excessive mobile phone use through this visualization.
+
+![download](https://github.com/user-attachments/assets/45699707-9314-4d78-a1ad-92a728dfceba)<br/>
 
 ### Data Preparation:
-(what was done to prepare the data)
+The data preparation process in the notebook begins with importing essential libraries such as numpy, pandas, seaborn, and matplotlib for data manipulation and visualization. The dataset is then loaded from a CSV file hosted on GitHub into a pandas DataFrame using the pd.read_csv function. Basic information about the dataset, including the number of non-null entries, data types of the columns, and memory usage, is displayed using the df.info() command. The data was checked for null values and the small number of null values were dropped. When trying to use a certain column to create a visualization, there was an error due to the column name having extra space so the data frame columns were cleaned with the .strip function. These initial steps ensure that the data is ready for further analysis and manipulation. 
