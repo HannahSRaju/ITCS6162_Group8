@@ -87,3 +87,20 @@ We can see if students are aware of potential health risks associated with exces
 
 ### Data Preparation:
 The data preparation process in the notebook begins with importing essential libraries such as numpy, pandas, seaborn, and matplotlib for data manipulation and visualization. The dataset is then loaded from a CSV file hosted on GitHub into a pandas DataFrame using the pd.read_csv function. Basic information about the dataset, including the number of non-null entries, data types of the columns, and memory usage, is displayed using the df.info() command. The data was checked for null values and the small number of null values were dropped. When trying to use a certain column to create a visualization, there was an error due to the column name having extra space so the data frame columns were cleaned with the .strip function. These initial steps ensure that the data is ready for further analysis and manipulation. 
+
+## Deliverable 2
+
+### Data Preparation: 
+(what was done to prepare the data)
+
+### Modeling:  
+two or more methods (be sure to explore the use of Pycaret)
+
+### Evaluation: 
+(which method provided the most accuracy/best results)
+
+### Conclusion/Results:  
+(what did you learn)
+
+### Known Issues: 
+(problems with predictors, reporting, bias, etc.) 
