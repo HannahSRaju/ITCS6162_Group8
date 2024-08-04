@@ -85,36 +85,29 @@ We can see if students are aware of potential health risks associated with exces
 
 ![download](https://github.com/user-attachments/assets/45699707-9314-4d78-a1ad-92a728dfceba)<br/>
 
-### Data Preparation:
-The data preparation process in the notebook begins with importing essential libraries such as numpy, pandas, seaborn, and matplotlib for data manipulation and visualization. The dataset is then loaded from a CSV file hosted on GitHub into a pandas DataFrame using the pd.read_csv function. Basic information about the dataset, including the number of non-null entries, data types of the columns, and memory usage, is displayed using the df.info() command. The data was checked for null values and the small number of null values were dropped. When trying to use a certain column to create a visualization, there was an error due to the column name having extra space so the data frame columns were cleaned with the .strip function. These initial steps ensure that the data is ready for further analysis and manipulation. 
-
 ## Deliverable 2
 
-### Data Preparation: 
-what was done to prepare the data?
-
-Ans: Identified and eliminated missing values using the dropna function from the pandas library. Removed excess spaces from column names and cells using the strip() method.
+### Data Preparation:
+The data preparation process in the notebook begins with importing essential libraries such as numpy, pandas, seaborn, and matplotlib for data manipulation and visualization. The dataset is then loaded from a CSV file hosted on GitHub into a pandas DataFrame using the pd.read_csv function. Basic information about the dataset, including the number of non-null entries, data types of the columns, and memory usage, is displayed using the df.info() command. The data was checked for null values and the small number of null values were dropped. When trying to use a certain column to create a visualization, there was an error due to the column name having extra space so the data frame columns were cleaned with the .strip function. These initial steps ensure that the data is ready for further analysis and manipulation. Before creating models, the data was encoded using LabelEndcoder() because all the variables were categorical. SMOTE was also applied to balance the data. 
 
 ### Modeling:  
-two or more methods (be sure to explore the use of Pycaret)
-
+For the initial models, we chose all the variables except for the target variable ('Performance Impact') as the predictors. We trained and evaluated the following models: Logistic Regression, Decision Tree, Random Forest, and K-Nearest Neighbors. This resulted in the following accuracy scores: Logistic Regression-0.52, Decision Tree-0.65, Random Forest0-0.73, and K-Nearest Neighbors-0.50. Then we tried using the feature selection SelectKBest() to choose the best 10 features and trained the models again. We narrowed the best features down further to 'Daily usages', 'Usage distraction', 'Usage symptoms', 'Symptom frequency', and 'Health rating'. This resulted in the following accuracy scores: Logistic Regression-0.34, Decision Tree-0.73, Random Forest0-0.71, and K-Nearest Neighbors-0.60. We also used GridSearchCV() to see if the models could be improved more with all the variables except for the target variable but got lower scores. Then we tried again with the narrowed-down predictors list, resulting in the following accuracy scores: Logistic Regression-0.23, Decision Tree-0.65, Random Forest-0.71, and K-Nearest Neighbors-0.63. Pycaret was also implemented and explored.
 
 ### Evaluation: 
-(which method provided the most accuracy/best results)
-The evaluation metrics for the models are provided in the below diagram. From this we can observe that Random Forest Classifier and Extreme Gradient Boosting has best accuracy
+The accuracy scores and classification report for the highest-performing models can be seen below:<br/>
+<img width="194" alt="image" src="https://github.com/user-attachments/assets/289ec1bd-202f-44ba-b36c-9f9dffebe9c7"><br/>
 
+The evaluation metrics for several other models using Pycaret are provided in the below diagram. From this, we can observe that Extra Trees Classifier and Extreme Gradient Boosting have the best accuracy.<br/>
+<img width="327" alt="image" src="https://github.com/user-attachments/assets/8c8ea1c7-13ec-4249-9cd8-36171cfa4767"><br/>
 
 ### Conclusion/Results:  
-(what did you learn)
-Best Model: Random Forest Classifier and Extreme Gradient Boosting both achieved the highest accuracy of 63.00%. The Random Forest Classifier had a higher AUC of 0.80, suggesting better overall performance in distinguishing between classes.
-Significant Predictors: The most influential predictors of academic performance included daily mobile phone usage, use of educational apps, and extent of distraction during studying.
-Health Symptoms: Prolonged mobile phone usage was strongly correlated with symptoms like sleep disturbances and headaches.
+Best Model(s): The Decision Tree and Random Forest Classifier models achieved the highest accuracy of 73% and 71% when trained using the limited selected features as predictors.
+Significant Predictors: The most influential predictors of academic performance included daily mobile phone usage, usage distraction, usage symptoms, symptom frequency, and health rating.<br/>
+Health Symptoms: Prolonged mobile phone usage was strongly correlated with symptoms like sleep disturbances and headaches.<br/>
 Educational Benefit: Mobile phones were beneficial for subjects such as research and accounting.
 
 ### Known Issues: 
-(problems with predictors, reporting, bias, etc.) 
-Data Imbalance: Smaller datasets often suffer from data imbalance, which can be partially mitigated using techniques like SMOTE or by adding more rows to the dataset.
-Overfitting: Smaller datasets are more prone to overfitting. Cross-validation and simpler models might help in reducing overfitting.
-Bias in Self-reported Data: Self-reported data might introduce bias. Incorporating objective measures can improve the reliability of the analysis.
+Data Imbalance: Smaller datasets often suffer from data imbalance, which can be partially mitigated using techniques like SMOTE or by adding more rows to the dataset.<br/>
+Overfitting: Smaller datasets are more prone to overfitting. Cross-validation and simpler models might help in reducing overfitting.<br/>
+Bias in Self-reported Data: Self-reported data might introduce bias. Incorporating objective measures can improve the reliability of the analysis.<br/>
 Generalizability: The findings from a small dataset might not be generalizable. Expanding the dataset in future studies can help improve generalizability.
-
