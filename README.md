@@ -95,13 +95,15 @@ For the initial models, we chose all the variables except for the target variabl
 
 ### Evaluation: 
 The accuracy scores and classification report for the highest-performing models can be seen below:<br/>
-<img width="194" alt="image" src="https://github.com/user-attachments/assets/289ec1bd-202f-44ba-b36c-9f9dffebe9c7"><br/>
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/289ec1bd-202f-44ba-b36c-9f9dffebe9c7"><br/>
 
 The evaluation metrics for several other models using Pycaret are provided in the below diagram. From this, we can observe that Extra Trees Classifier and Extreme Gradient Boosting have the best accuracy.<br/>
-<img width="327" alt="image" src="https://github.com/user-attachments/assets/8c8ea1c7-13ec-4249-9cd8-36171cfa4767"><br/>
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/8c8ea1c7-13ec-4249-9cd8-36171cfa4767"><br/>
 
 ### Conclusion/Results:  
-Best Model(s): The Decision Tree and Random Forest Classifier models achieved the highest accuracy of 73% and 71% when trained using the limited selected features as predictors.
+Best Model(s): The Decision Tree and Random Forest Classifier models achieved the highest accuracy of 73% and 71% when trained using the limited selected features as predictors.<br/>
 Significant Predictors: The most influential predictors of academic performance included daily mobile phone usage, usage distraction, usage symptoms, symptom frequency, and health rating.<br/>
 Health Symptoms: Prolonged mobile phone usage was strongly correlated with symptoms like sleep disturbances and headaches.<br/>
 Educational Benefit: Mobile phones were beneficial for subjects such as research and accounting.
