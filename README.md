@@ -92,6 +92,7 @@ The data preparation process in the notebook begins with importing essential lib
 
 ### Data Preparation: 
 (what was done to prepare the data)
+Ans: Identified and eliminated missing values using the dropna function from the pandas library. Removed excess spaces from column names and cells using the strip() method.
 
 ### Modeling:  
 two or more methods (be sure to explore the use of Pycaret)
