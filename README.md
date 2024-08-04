@@ -91,17 +91,30 @@ The data preparation process in the notebook begins with importing essential lib
 ## Deliverable 2
 
 ### Data Preparation: 
-(what was done to prepare the data)
+what was done to prepare the data?
+
 Ans: Identified and eliminated missing values using the dropna function from the pandas library. Removed excess spaces from column names and cells using the strip() method.
 
 ### Modeling:  
 two or more methods (be sure to explore the use of Pycaret)
 
+
 ### Evaluation: 
 (which method provided the most accuracy/best results)
+The evaluation metrics for the models are provided in the below diagram. From this we can observe that Random Forest Classifier and Extreme Gradient Boosting has best accuracy
+
 
 ### Conclusion/Results:  
 (what did you learn)
+Best Model: Random Forest Classifier and Extreme Gradient Boosting both achieved the highest accuracy of 63.00%. The Random Forest Classifier had a higher AUC of 0.80, suggesting better overall performance in distinguishing between classes.
+Significant Predictors: The most influential predictors of academic performance included daily mobile phone usage, use of educational apps, and extent of distraction during studying.
+Health Symptoms: Prolonged mobile phone usage was strongly correlated with symptoms like sleep disturbances and headaches.
+Educational Benefit: Mobile phones were beneficial for subjects such as research and accounting.
 
 ### Known Issues: 
 (problems with predictors, reporting, bias, etc.) 
+Data Imbalance: Smaller datasets often suffer from data imbalance, which can be partially mitigated using techniques like SMOTE or by adding more rows to the dataset.
+Overfitting: Smaller datasets are more prone to overfitting. Cross-validation and simpler models might help in reducing overfitting.
+Bias in Self-reported Data: Self-reported data might introduce bias. Incorporating objective measures can improve the reliability of the analysis.
+Generalizability: The findings from a small dataset might not be generalizable. Expanding the dataset in future studies can help improve generalizability.
+
